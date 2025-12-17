@@ -4,52 +4,45 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Marwa Riyaz Portfolio</title>
-<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
-  body {font-family:'Roboto', sans-serif; margin:0; padding:0; background:#f3f0f8; color:#333; overflow-x:hidden;}
-  a {text-decoration:none; color:inherit;}
-  h1,h2 {color:#6a0dad;}
-  section {padding:50px 20px; max-width:1100px; margin:auto; margin-top:20px; background:white; border-radius:10px; box-shadow:0 4px 20px rgba(0,0,0,0.1);}
-  ul {line-height:1.6;}
+/* General Styles */
+body {font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#f3f0f8; color:#333;}
+a {text-decoration:none; color:inherit;}
+a:hover {text-decoration:underline;}
+h1,h2 {color:#6a0dad;}
+section {padding:60px 20px; max-width:1000px; margin:auto; margin-top:20px; background:white; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.1);}
+ul {line-height:1.6;}
 
-  /* Header */
-  header {
-    background: linear-gradient(135deg, #6a0dad, #9b59b6);
-    color:white; text-align:center; padding:60px 20px; position:relative; overflow:hidden;
-  }
-  .profile-pic {width:160px; height:160px; border-radius:50%; border:4px solid white; margin-bottom:20px; object-fit:cover; transition: transform 0.5s;}
-  .profile-pic:hover {transform: scale(1.1);}
-  header h1 {font-size:2.8em; margin-bottom:10px;}
-  header p {margin:5px 0;}
+/* Header */
+header {background: linear-gradient(135deg, #6a0dad, #9b59b6); color:white; text-align:center; padding:50px 20px; position:relative; overflow:hidden;}
+.profile-pic {width:150px; height:150px; border-radius:50%; border:4px solid white; margin-bottom:20px; object-fit:cover;}
+header h1 {font-size:2.5em; margin-bottom:10px;}
+header p {margin:5px 0;}
 
-  /* Floating icons */
-  .floating-icon {position:absolute; font-size:30px; opacity:0.6; color:white; animation:floatAnim 10s linear infinite;}
-  @keyframes floatAnim {
-    0% {transform: translateY(0) rotate(0deg);}
-    50% {transform: translateY(-20px) rotate(180deg);}
-    100% {transform: translateY(0) rotate(360deg);}
-  }
+/* Nav */
+nav {display:flex; justify-content:center; flex-wrap:wrap; background:#4b0082;}
+nav a {color:white; padding:15px 25px; text-transform:uppercase; font-weight:600; transition:0.3s;}
+nav a:hover {background:#6a0dad; border-radius:5px;}
 
-  /* Navigation */
-  nav {display:flex; justify-content:center; flex-wrap:wrap; background:#4b0082; position:sticky; top:0; z-index:100;}
-  nav a {color:white; padding:15px 25px; text-transform:uppercase; font-weight:600; transition:0.3s;}
-  nav a:hover {background:#6a0dad; border-radius:5px;}
+/* Buttons */
+.btn {background:#6a0dad; color:white; padding:10px 20px; border:none; border-radius:5px; transition:0.3s;}
+.btn:hover {background:#9b59b6; cursor:pointer;}
 
-  /* Buttons */
-  .btn {background:#6a0dad; color:white; padding:10px 20px; border:none; border-radius:5px; transition:0.3s;}
-  .btn:hover {background:#9b59b6; cursor:pointer; transform:scale(1.05);}
+/* Tabs */
+.tabcontent {display:none; animation:fadeIn 0.8s;}
+.tabcontent.active {display:block;}
 
-  /* Tabs */
-  .tabcontent {display:none; animation:fadeIn 0.8s;}
-  .tabcontent.active {display:block;}
-  @keyframes fadeIn {from{opacity:0;} to{opacity:1;}}
+/* Icons */
+.fa {margin-right:8px; color:#6a0dad;}
 
-  /* Project Cards */
-  .project-card {border:1px solid #ddd; border-radius:8px; padding:15px; margin-bottom:15px; transition:0.3s; background:#faf5ff;}
-  .project-card:hover {transform:translateY(-5px); box-shadow:0 4px 15px rgba(0,0,0,0.2);}
+/* Fade-in animation */
+@keyframes fadeIn {from{opacity:0;} to{opacity:1;}}
+
+/* Project Cards */
+.project-card {border:1px solid #ddd; border-radius:8px; padding:15px; margin-bottom:15px; transition:0.3s; background:#faf5ff;}
+.project-card:hover {transform:translateY(-5px); box-shadow:0 4px 15px rgba(0,0,0,0.2);}
 </style>
 </head>
 <body>
@@ -57,38 +50,24 @@
 <header>
   <img src="https://github.com/MarwaRiyaz/marwa-portfolio/blob/main/1.jpg?raw=true" alt="Marwa Riyaz" class="profile-pic">
   <h1>Marwa Riyaz</h1>
-  <p>Clinical Data Analyst | Healthcare BI Specialist</p>
-  <p>Email: <a href="mailto:marwariyaz1@gmail.com">marwariyaz1@gmail.com</a> | Phone: +1 872 325-4134 | <a href="https://www.linkedin.com/in/marwa-riyaz-896046258/" target="_blank">LinkedIn</a></p>
-
-  <!-- Floating Icons -->
-  <i class="fa fa-database floating-icon" style="top:20px; left:10%; animation-delay:0s;"></i>
-  <i class="fa fa-chart-line floating-icon" style="top:40px; left:70%; animation-delay:2s;"></i>
-  <i class="fa fa-table floating-icon" style="top:80px; left:30%; animation-delay:4s;"></i>
-  <i class="fa fa-code floating-icon" style="top:60px; left:50%; animation-delay:6s;"></i>
+  <p>Clinical Data Analyst | Health Informatics Specialist | Transforming healthcare data into insights</p>
+  <p>Email: <a href="mailto:marwariyaz1@gmail.com">marwariyaz1@gmail.com</a> | Phone: +1 872-325-4134 | 
+  <a href="https://www.linkedin.com/in/marwa-riyaz-896046258/" target="_blank">LinkedIn</a></p>
 </header>
 
 <nav>
   <a href="#" onclick="openTab('about')"><i class="fa fa-user"></i> About Me</a>
   <a href="#" onclick="openTab('education')"><i class="fa fa-graduation-cap"></i> Education</a>
   <a href="#" onclick="openTab('skills')"><i class="fa fa-cogs"></i> Skills</a>
-  <a href="#" onclick="openTab('projects')"><i class="fa fa-chart-line"></i> Dashboard / Projects</a>
-  <a href="#" onclick="openTab('contact')"><i class="fa fa-envelope"></i> Contact / Blog</a>
+  <a href="#" onclick="openTab('projects')"><i class="fa fa-chart-line"></i> Projects/Dashboard</a>
+  <a href="#" onclick="openTab('experience')"><i class="fa fa-briefcase"></i> Experience</a>
+  <a href="#" onclick="openTab('resume')"><i class="fa fa-file"></i> Resume</a>
+  <a href="#" onclick="openTab('contact')"><i class="fa fa-envelope"></i> Contact</a>
 </nav>
 
 <section id="about" class="tabcontent active">
   <h2>About Me</h2>
-  <p><strong>Professional Summary:</strong> Clinical Data Analyst and Healthcare BI Professional with 6 years of experience in clinical data management, claims analytics, and EHR systems integration. Skilled in SQL, Python, SAS, Power BI, Tableau, SPSS, R. Experienced in CDMS, CTMS, Epic, Athena EHR, regulatory compliance (HIPAA, ICH-GCP, 21 CFR Part 11).</p>
-  <ul>
-    <li>Expert in clinical data analysis using CDMS, CTMS, Epic, Athena, and OpenClinica.</li>
-    <li>Designed and optimized Case Report Forms (CRFs/eCRFs).</li>
-    <li>SQL workflows for large dataset extraction, cleaning, and analysis.</li>
-    <li>Automated workflows using Python and SQL.</li>
-    <li>Mapping data to CDISC SDTM and ADaM for regulatory submissions.</li>
-    <li>Built SAS programs for statistical analysis and patient profiling.</li>
-    <li>Interactive dashboards in Power BI and Tableau.</li>
-    <li>Medical coding standards knowledge (MedDRA, SNOMED CT, ICD-10, LOINC, CPT).</li>
-    <li>Agile, Scrum, Waterfall, and JAD session expertise.</li>
-  </ul>
+  <p>Clinical Data Analyst and Healthcare BI Professional with 6 years of proven expertise in clinical data management, claims analytics, and EHR systems integration. Skilled in SQL, Python, SAS, Power BI, Tableau, and statistical tools like SPSS and R for data analysis, transformation, and visualization. Experienced with CDMS, CTMS, Epic (Clarity, Caboodle, Cogito), Athena EHR, and regulatory frameworks such as HIPAA, ICH-GCP, and 21 CFR Part 11. Adept in using CDISC SDTM, ADaM, MedDRA, LOINC, SNOMED CT, ICD-10, CPT, and HL7/FHIR standards. Strong background in Agile/Waterfall methodologies, JAD sessions, dashboard development, and healthcare coding compliance for clinical trials and claims reporting.</p>
 </section>
 
 <section id="education" class="tabcontent">
@@ -102,36 +81,65 @@
 <section id="skills" class="tabcontent">
   <h2>Technical Skills</h2>
   <ul>
-    <li><i class="fa fa-terminal"></i> Languages & Scripting: SQL, Python, R, SAS, SPSS, Shell Scripting</li>
-    <li><i class="fa fa-chart-line"></i> BI & Reporting Tools: Power BI, Tableau, Excel, MS Access</li>
-    <li><i class="fa fa-hospital"></i> Clinical & Healthcare Systems: Medidata Rave, OpenClinica, Epic, Athena EHR, CTMS, CDMS</li>
-    <li><i class="fa fa-book"></i> Standards & Coding: CDASH, CDISC SDTM/ADaM, ICD-10, CPT, SNOMED CT, LOINC, MedDRA</li>
-    <li><i class="fa fa-network-wired"></i> Data Integration & Interoperability: HL7, FHIR, EHR Integration</li>
-    <li><i class="fa fa-project-diagram"></i> Project Management: Agile, Scrum, Waterfall, JAD Sessions, BRD, FRS</li>
+    <li><i class="fa fa-terminal"></i> SQL, Python, R, SAS, SPSS, Shell Scripting</li>
+    <li><i class="fa fa-chart-line"></i> Power BI, Tableau, Excel, MS Access, MS Project</li>
+    <li><i class="fa fa-hospital"></i> Medidata Rave, OpenClinica, Epic (Clarity, Caboodle, Cogito, Slicer Dicer), Athena EHR, CTMS, CDMS, ARIS-G, ClinTrace</li>
+    <li><i class="fa fa-book"></i> CDASH, CDISC (SDTM, ADaM), ICD-10, CPT, SNOMED CT, LOINC, MedDRA, CDT</li>
+    <li><i class="fa fa-network-wired"></i> HL7, FHIR, EDIFECS, EHR Integration</li>
+    <li><i class="fa fa-project-diagram"></i> Agile, Scrum, Kanban, Waterfall, JAD, BRD, FRS, AS-IS/TO-BE, Gap Analysis</li>
+    <li><i class="fa fa-database"></i> Epic Caboodle, Oracle Clinical, RDBMS, ETL, Data Mapping</li>
+    <li><i class="fa fa-shield-alt"></i> HIPAA, 21 CFR Part 11, ICH-GCP, FDA, HHS/DHHS Guidelines</li>
+    <li><i class="fa fa-chart-pie"></i> SAS, R, Dashboards, KPI, Patient Profiles, Listings, Tables, AE Analysis, Clinical Coding Validation</li>
   </ul>
 </section>
 
 <section id="projects" class="tabcontent">
-  <h2>Dashboard / Projects</h2>
+  <h2>Projects / Dashboards</h2>
   <div class="project-card">
     <h3><i class="fa fa-chart-bar"></i> Power BI Dashboard</h3>
-    <a href="#" class="btn" target="_blank">View Dashboard</a>
+    <a href="https://app.powerbi.com/view?r=YOUR_DASHBOARD_LINK" target="_blank" class="btn">View Dashboard</a>
   </div>
   <div class="project-card">
     <h3><i class="fa fa-chart-pie"></i> Tableau Dashboard</h3>
-    <a href="#" class="btn" target="_blank">View Dashboard</a>
-  </div>
-  <div class="project-card">
-    <h3><i class="fa fa-code"></i> Python Analysis</h3>
-    <a href="#" class="btn" target="_blank">View Notebook</a>
+    <a href="https://public.tableau.com/views/YOUR_DASHBOARD_LINK" target="_blank" class="btn">View Dashboard</a>
   </div>
 </section>
 
+<section id="experience" class="tabcontent">
+  <h2>Professional Experience</h2>
+  <p><strong>IP Heights LLC</strong> | Clinical Data Analyst | March 2025 – Present</p>
+  <ul>
+    <li>Agile and Waterfall methodologies for project lifecycles</li>
+    <li>Collected and validated clinical trial data (Medidata Rave, OpenClinica)</li>
+    <li>Designed Case Report Forms (CRFs) using CDASH standards</li>
+    <li>Automated workflows using Python and SQL</li>
+    <li>Built dashboards in Power BI and Tableau</li>
+  </ul>
+  <p><strong>Neelyx Lab</strong> | Clinical Data Analyst | Aug 2023 – Dec 2024</p>
+  <ul>
+    <li>Analyzed patient treatment and claims data (SNOMED CT, ICD-10, CPT)</li>
+    <li>Implemented SQL workflows for dataset transformation and reporting</li>
+    <li>Created dashboards in Power BI and Tableau to monitor operations</li>
+  </ul>
+  <p><strong>Mythri Multidisciplinary Hospital, Hyderabad, India</strong> | Healthcare BI Analyst | Mar 2019 – Dec 2022</p>
+  <ul>
+    <li>Generated reports and dashboards using Power BI and Tableau</li>
+    <li>Validated clinical coding data for CMS compliance</li>
+    <li>Performed SQL queries for quality measure reporting</li>
+  </ul>
+</section>
+
+<section id="resume" class="tabcontent">
+  <h2>Download My Resume</h2>
+  <p>You can download my detailed resume here:</p>
+  <a href="https://github.com/MarwaRiyaz/marwa-portfolio/blob/main/Marwa_Riyaz_Resume.pdf?raw=true" class="btn" target="_blank"><i class="fa fa-download"></i> Download Resume PDF</a>
+</section>
+
 <section id="contact" class="tabcontent">
-  <h2>Contact & LinkedIn</h2>
+  <h2>Contact Me</h2>
   <p>Email: <a href="mailto:marwariyaz1@gmail.com">marwariyaz1@gmail.com</a></p>
-  <p>Phone: +1 872 325-4134</p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/marwa-riyaz-896046258/" target="_blank">View Profile</a></p>
+  <p>Phone: +1 872-325-4134</p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/marwa-riyaz-896046258/" target="_blank">https://www.linkedin.com/in/marwa-riyaz-896046258/</a></p>
 </section>
 
 <script>
