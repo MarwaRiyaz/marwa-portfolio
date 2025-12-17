@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marwa Riyaz Portfolio</title>
-  <style>
-    body {font-family: Arial, sans-serif; margin:0; padding:0; background-color:#f4f4f4;}
-    header {background-color:#0a74da; color:white; padding:20px 0; text-align:center;}
-    nav {display:flex; justify-content:center; background:#1a1a1a;}
-    nav a {color:white; padding:14px 20px; text-decoration:none; text-transform:uppercase;}
-    nav a:hover {background-color:#0a74da;}
-    section {padding:40px; max-width:1000px; margin:auto; background:white; margin-top:20px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-    .tabcontent {display:none;}
-    .tabcontent.active {display:block;}
-    .btn {background:#0a74da; color:white; padding:10px 20px; border:none; border-radius:5px; text-decoration:none;}
-    .btn:hover {background:#095bb5;}
-    h2 {color:#0a74da;}
-    ul {line-height:1.6;}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marwa Riyaz Portfolio</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  /* General Styles */
+  body {font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#f3f0f8; color:#333;}
+  a {text-decoration:none; color:inherit;}
+  h1,h2 {color:#6a0dad;}
+  section {padding:60px 20px; max-width:1000px; margin:auto; margin-top:20px; background:white; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.1);}
+  ul {line-height:1.6;}
+  
+  /* Header */
+  header {background: linear-gradient(135deg, #6a0dad, #9b59b6); color:white; text-align:center; padding:50px 20px; position:relative; overflow:hidden;}
+  .profile-pic {width:150px; height:150px; border-radius:50%; border:4px solid white; margin-bottom:20px; object-fit:cover;}
+  header h1 {font-size:2.5em; margin-bottom:10px;}
+  header p {margin:5px 0;}
+
+  /* Nav */
+  nav {display:flex; justify-content:center; flex-wrap:wrap; background:#4b0082;}
+  nav a {color:white; padding:15px 25px; text-transform:uppercase; font-weight:600; transition:0.3s;}
+  nav a:hover {background:#6a0dad; border-radius:5px;}
+
+  /* Buttons */
+  .btn {background:#6a0dad; color:white; padding:10px 20px; border:none; border-radius:5px; transition:0.3s;}
+  .btn:hover {background:#9b59b6; cursor:pointer;}
+
+  /* Tabs */
+  .tabcontent {display:none; animation:fadeIn 0.8s;}
+  .tabcontent.active {display:block;}
+  
+  /* Icons */
+  .fa {margin-right:8px; color:#6a0dad;}
+
+  /* Fade-in animation */
+  @keyframes fadeIn {from{opacity:0;} to{opacity:1;}}
+  
+  /* Project Cards */
+  .project-card {border:1px solid #ddd; border-radius:8px; padding:15px; margin-bottom:15px; transition:0.3s; background:#faf5ff;}
+  .project-card:hover {transform:translateY(-5px); box-shadow:0 4px 15px rgba(0,0,0,0.2);}
+</style>
 </head>
 <body>
 
 <header>
+  <img src="https://github.com/MarwaRiyaz/marwa-portfolio/blob/main/1.jpg?raw=true" alt="Marwa Riyaz" class="profile-pic">
   <h1>Marwa Riyaz</h1>
   <p>Clinical Data Analyst | Health Informatics Specialist | Transforming healthcare data into insights</p>
-  <p>Email: <a href="mailto:marwariyaz1@gmail.com">marwariyaz1@gmail.com</a> | Phone: +1 872-325-4134 | <a href="YOUR_LINKEDIN_URL" target="_blank">LinkedIn</a></p>
+  <p>Email: <a href="mailto:marwariyaz1@gmail.com">marwariyaz1@gmail.com</a> | Phone: +1 872-325-4134 | <a href="#" target="_blank">LinkedIn</a></p>
 </header>
 
 <nav>
-  <a href="#" onclick="openTab('about')">About Me</a>
-  <a href="#" onclick="openTab('resume')">Resume</a>
-  <a href="#" onclick="openTab('projects')">Projects</a>
-  <a href="#" onclick="openTab('skills')">Skills</a>
-  <a href="#" onclick="openTab('education')">Education</a>
-  <a href="#" onclick="openTab('contact')">Contact</a>
+  <a href="#" onclick="openTab('about')"><i class="fa fa-user"></i> About Me</a>
+  <a href="#" onclick="openTab('resume')"><i class="fa fa-file"></i> Resume</a>
+  <a href="#" onclick="openTab('projects')"><i class="fa fa-chart-line"></i> Projects</a>
+  <a href="#" onclick="openTab('skills')"><i class="fa fa-cogs"></i> Skills</a>
+  <a href="#" onclick="openTab('education')"><i class="fa fa-graduation-cap"></i> Education</a>
+  <a href="#" onclick="openTab('contact')"><i class="fa fa-envelope"></i> Contact</a>
 </nav>
 
 <section id="about" class="tabcontent active">
   <h2>About Me</h2>
-  <p>Clinical Data Analyst and Healthcare BI Specialist with 6 years of expertise in clinical data management, claims analytics, and EHR systems integration. Skilled in SQL, Python, SAS, R, Power BI, Tableau, and statistical tools for analysis, transformation, and visualization. Experienced in CDMS, CTMS, Epic, Athena EHR, and regulatory frameworks including HIPAA, ICH-GCP, and 21 CFR Part 11.</p>
+  <p>Clinical Data Analyst and Healthcare BI Specialist with 6 years of experience in clinical data management, claims analytics, and EHR systems integration. Skilled in SQL, Python, SAS, R, Power BI, Tableau, and statistical tools for analysis and visualization. Experienced in CDMS, CTMS, Epic, Athena EHR, and regulatory frameworks including HIPAA, ICH-GCP, and 21 CFR Part 11.</p>
 </section>
 
 <section id="resume" class="tabcontent">
@@ -48,23 +76,33 @@
 
 <section id="projects" class="tabcontent">
   <h2>Projects</h2>
-  <ul>
-    <li><strong>Power BI Dashboard:</strong> <a href="https://app.powerbi.com/view?r=YOUR_DASHBOARD_LINK" target="_blank">View Dashboard</a></li>
-    <li><strong>Tableau Dashboard:</strong> <a href="https://public.tableau.com/views/YOUR_DASHBOARD_LINK" target="_blank">View Dashboard</a></li>
-    <li><strong>Python Analysis:</strong> <a href="https://github.com/MarwaRiyaz/marwa-portfolio/blob/main/projects/DataAnalysis.ipynb" target="_blank">View Notebook</a></li>
-    <li><strong>Excel File:</strong> <a href="https://github.com/MarwaRiyaz/marwa-portfolio/blob/main/projects/Project1.xlsx?raw=true" target="_blank">Download Project 1 Excel</a></li>
-  </ul>
+  <div class="project-card">
+    <h3><i class="fa fa-chart-bar"></i> Power BI Dashboard</h3>
+    <a href="https://app.powerbi.com/view?r=YOUR_DASHBOARD_LINK" target="_blank" class="btn">View Dashboard</a>
+  </div>
+  <div class="project-card">
+    <h3><i class="fa fa-chart-pie"></i> Tableau Dashboard</h3>
+    <a href="https://public.tableau.com/views/YOUR_DASHBOARD_LINK" target="_blank" class="btn">View Dashboard</a>
+  </div>
+  <div class="project-card">
+    <h3><i class="fa fa-code"></i> Python Analysis</h3>
+    <a href="https://github.com/MarwaRiyaz/marwa-portfolio/blob/main/projects/DataAnalysis.ipynb" target="_blank" class="btn">View Notebook</a>
+  </div>
+  <div class="project-card">
+    <h3><i class="fa fa-file-excel"></i> Excel File</h3>
+    <a href="https://github.com/MarwaRiyaz/marwa-portfolio/blob/main/projects/Project1.xlsx?raw=true" target="_blank" class="btn">Download Excel</a>
+  </div>
 </section>
 
 <section id="skills" class="tabcontent">
   <h2>Skills</h2>
   <ul>
-    <li><strong>Languages & Tools:</strong> SQL, Python, R, SAS, SPSS, Shell Scripting</li>
-    <li><strong>BI & Visualization:</strong> Power BI, Tableau, Excel</li>
-    <li><strong>Healthcare Systems:</strong> Epic, Athena, OpenClinica, CTMS, CDMS</li>
-    <li><strong>Standards & Coding:</strong> CDISC SDTM/ADaM, MedDRA, SNOMED CT, ICD-10, LOINC, CPT</li>
-    <li><strong>Data Integration:</strong> HL7, FHIR, EHR Integration</li>
-    <li><strong>Methodologies:</strong> Agile, Scrum, Waterfall, Six Sigma, JAD Sessions</li>
+    <li><i class="fa fa-terminal"></i> SQL, Python, R, SAS, SPSS, Shell Scripting</li>
+    <li><i class="fa fa-chart-line"></i> Power BI, Tableau, Excel</li>
+    <li><i class="fa fa-hospital"></i> Epic, Athena, OpenClinica, CTMS, CDMS</li>
+    <li><i class="fa fa-book"></i> CDISC SDTM/ADaM, MedDRA, SNOMED CT, ICD-10, LOINC, CPT</li>
+    <li><i class="fa fa-network-wired"></i> HL7, FHIR, EHR Integration</li>
+    <li><i class="fa fa-project-diagram"></i> Agile, Scrum, Waterfall, Six Sigma</li>
   </ul>
 </section>
 
@@ -80,7 +118,7 @@
   <h2>Contact Me</h2>
   <p>Email: <a href="mailto:marwariyaz1@gmail.com">marwariyaz1@gmail.com</a></p>
   <p>Phone: +1 872-325-4134</p>
-  <p>LinkedIn: <a href="YOUR_LINKEDIN_URL" target="_blank">View Profile</a></p>
+  <p>LinkedIn: <a href="#" target="_blank">View Profile</a></p>
 </section>
 
 <script>
