@@ -1,147 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marwa Riyaz | Data Analyst Portfolio</title>
-  <meta name="description" content="Marwa Riyaz – Data Analyst & Health Informatics Specialist. Healthcare analytics, dashboards, and data-driven insights." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marwa Riyaz Portfolio</title>
   <style>
-    :root {
-      --primary: #0f172a;
-      --secondary: #2563eb;
-      --bg: #f8fafc;
-      --card: #ffffff;
-      --text: #1e293b;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-      padding: 4rem 1.5rem;
-      text-align: center;
-    }
-    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-    header p { max-width: 700px; margin: 0.5rem auto 1.5rem; }
-    .btn {
-      display: inline-block;
-      margin: 0.3rem;
-      padding: 0.7rem 1.2rem;
-      background: white;
-      color: var(--primary);
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    section {
-      max-width: 1100px;
-      margin: 3rem auto;
-      padding: 0 1.5rem;
-    }
-    h2 { margin-bottom: 1rem; color: var(--primary); }
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background: var(--card);
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.06);
-    }
-    ul { padding-left: 1.2rem; }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #e2e8f0;
-      margin-top: 4rem;
-    }
-    .skills span {
-      display: inline-block;
-      background: #e0e7ff;
-      color: #1e3a8a;
-      padding: 0.4rem 0.6rem;
-      margin: 0.3rem;
-      border-radius: 6px;
-      font-size: 0.9rem;
-    }
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background-color:#f4f4f4;}
+    header {background-color:#0a74da; color:white; padding:20px 0; text-align:center;}
+    nav {display:flex; justify-content:center; background:#1a1a1a;}
+    nav a {color:white; padding:14px 20px; text-decoration:none; text-transform:uppercase;}
+    nav a:hover {background-color:#0a74da;}
+    section {padding:40px; max-width:1000px; margin:auto; background:white; margin-top:20px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+    .tabcontent {display:none;}
+    .tabcontent.active {display:block;}
+    .btn {background:#0a74da; color:white; padding:10px 20px; border:none; border-radius:5px; text-decoration:none;}
+    .btn:hover {background:#095bb5;}
+    h2 {color:#0a74da;}
+    ul {line-height:1.6;}
   </style>
 </head>
 <body>
 
 <header>
   <h1>Marwa Riyaz</h1>
-  <h3>Data Analyst | Health Informatics Specialist</h3>
-  <p>Transforming healthcare data into actionable insights that drive better decisions, efficiency, and outcomes.</p>
-  <a href="#projects" class="btn">View Projects</a>
-  <a href="#resume" class="btn">View Resume</a>
-  <a href="#contact" class="btn">Contact Me</a>
+  <p>Clinical Data Analyst | Health Informatics Specialist | Transforming healthcare data into insights</p>
+  <p>Email: <a href="mailto:marwariyaz1@gmail.com">marwariyaz1@gmail.com</a> | Phone: +1 872-325-4134 | <a href="YOUR_LINKEDIN_URL" target="_blank">LinkedIn</a></p>
 </header>
 
-<section id="about">
+<nav>
+  <a href="#" onclick="openTab('about')">About Me</a>
+  <a href="#" onclick="openTab('resume')">Resume</a>
+  <a href="#" onclick="openTab('projects')">Projects</a>
+  <a href="#" onclick="openTab('skills')">Skills</a>
+  <a href="#" onclick="openTab('education')">Education</a>
+  <a href="#" onclick="openTab('contact')">Contact</a>
+</nav>
+
+<section id="about" class="tabcontent active">
   <h2>About Me</h2>
-  <p>
-    I am a Data Analyst with a Bachelor’s degree in Pharmacy and a Master’s degree in Health Informatics from Governor State University.
-    My background allows me to bridge clinical knowledge with data analytics to support evidence-based decision-making in healthcare.
-  </p>
+  <p>Clinical Data Analyst and Healthcare BI Specialist with 6 years of expertise in clinical data management, claims analytics, and EHR systems integration. Skilled in SQL, Python, SAS, R, Power BI, Tableau, and statistical tools for analysis, transformation, and visualization. Experienced in CDMS, CTMS, Epic, Athena EHR, and regulatory frameworks including HIPAA, ICH-GCP, and 21 CFR Part 11.</p>
 </section>
 
-<section id="skills">
+<section id="resume" class="tabcontent">
+  <h2>Resume</h2>
+  <a href="https://github.com/MarwaRiyaz/marwa-portfolio/blob/main/Marwa_Riyaz_Resume.pdf?raw=true" class="btn" target="_blank">Download Resume PDF</a>
+</section>
+
+<section id="projects" class="tabcontent">
+  <h2>Projects</h2>
+  <ul>
+    <li><strong>Power BI Dashboard:</strong> <a href="https://app.powerbi.com/view?r=YOUR_DASHBOARD_LINK" target="_blank">View Dashboard</a></li>
+    <li><strong>Tableau Dashboard:</strong> <a href="https://public.tableau.com/views/YOUR_DASHBOARD_LINK" target="_blank">View Dashboard</a></li>
+    <li><strong>Python Analysis:</strong> <a href="https://github.com/MarwaRiyaz/marwa-portfolio/blob/main/projects/DataAnalysis.ipynb" target="_blank">View Notebook</a></li>
+    <li><strong>Excel File:</strong> <a href="https://github.com/MarwaRiyaz/marwa-portfolio/blob/main/projects/Project1.xlsx?raw=true" target="_blank">Download Project 1 Excel</a></li>
+  </ul>
+</section>
+
+<section id="skills" class="tabcontent">
   <h2>Skills</h2>
-  <div class="card skills">
-    <span>SQL</span><span>Python</span><span>R</span><span>Power BI</span><span>Tableau</span><span>Excel</span>
-    <span>Healthcare Data</span><span>EHR Concepts</span><span>Statistical Analysis</span><span>Basic Machine Learning</span>
-  </div>
+  <ul>
+    <li><strong>Languages & Tools:</strong> SQL, Python, R, SAS, SPSS, Shell Scripting</li>
+    <li><strong>BI & Visualization:</strong> Power BI, Tableau, Excel</li>
+    <li><strong>Healthcare Systems:</strong> Epic, Athena, OpenClinica, CTMS, CDMS</li>
+    <li><strong>Standards & Coding:</strong> CDISC SDTM/ADaM, MedDRA, SNOMED CT, ICD-10, LOINC, CPT</li>
+    <li><strong>Data Integration:</strong> HL7, FHIR, EHR Integration</li>
+    <li><strong>Methodologies:</strong> Agile, Scrum, Waterfall, Six Sigma, JAD Sessions</li>
+  </ul>
 </section>
 
-<section id="projects">
-  <h2>Projects & Dashboards</h2>
-  <div class="card-grid">
-    <div class="card">
-      <h3>Healthcare Analytics Dashboard</h3>
-      <p><strong>Tools:</strong> Power BI, SQL, Excel</p>
-      <p>Interactive dashboard analyzing patient demographics, visit trends, and key performance indicators.</p>
-    </div>
-    <div class="card">
-      <h3>Clinical Data Analysis</h3>
-      <p><strong>Tools:</strong> Python, Pandas, SQL</p>
-      <p>Analyzed clinical datasets to identify trends in outcomes and treatment effectiveness.</p>
-    </div>
-    <div class="card">
-      <h3>Business Intelligence Reporting</h3>
-      <p><strong>Tools:</strong> Tableau, Excel</p>
-      <p>Developed KPI dashboards to support business and operational decision-making.</p>
-    </div>
-  </div>
+<section id="education" class="tabcontent">
+  <h2>Education</h2>
+  <ul>
+    <li>Master of Science in Health Informatics – Governors State University, Chicago, IL</li>
+    <li>Bachelor of Pharmacy – Jawaharlal Nehru Technological University, Hyderabad, India</li>
+  </ul>
 </section>
 
-<section id="resume">
-  <h2>Education & Resume</h2>
-  <div class="card">
-    <p><strong>Master of Science – Health Informatics</strong><br/>Governor State University</p>
-    <p><strong>Bachelor of Pharmacy</strong></p>
-    <p><a class="btn" href="#">Download Resume (PDF)</a></p>
-  </div>
+<section id="contact" class="tabcontent">
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:marwariyaz1@gmail.com">marwariyaz1@gmail.com</a></p>
+  <p>Phone: +1 872-325-4134</p>
+  <p>LinkedIn: <a href="YOUR_LINKEDIN_URL" target="_blank">View Profile</a></p>
 </section>
 
-<section id="contact">
-  <h2>Contact & Connect</h2>
-  <div class="card">
-    <p>Email: yourname@email.com</p>
-    <p>LinkedIn | GitHub | Kaggle | Tableau Public</p>
-  </div>
-</section>
-
-<footer>
-  <p>© 2025 Marwa Riyaz | Data Analyst Portfolio</p>
-</footer>
+<script>
+  function openTab(tabId) {
+    const tabs = document.querySelectorAll('.tabcontent');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+  }
+</script>
 
 </body>
 </html>
